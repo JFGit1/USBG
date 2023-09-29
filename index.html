@@ -39,6 +39,9 @@
 				.main-menu-lv-0-hover {
 					@apply bg-tertiary_main border-accent_orange;
 				}
+				.input {
+					@apply bg-accent_teal_blue hover:bg-accent_teal_blue_400 mb-3 border rounded-full border-accent_teal_blue_400 py-2 px-5 placeholder:text-white text-white outline-none;
+				}
 			}
 			@layer base {
 				p {
@@ -122,6 +125,109 @@
 				doloribus ipsum. Expedita odit delectus ipsam.
 			</p>
 		</main>
-		<footer class="bg-slate-600 h-96"></footer>
+		<footer class="bg-slate-600 h-96 flex">
+			<div class="bg-[url('./images/bg-footer-01.jpg')] h-full w-[512px] bg-right bg-no-repeat">
+				<div
+					class="bg-gradient-to-r from-[#14355A]/[0] to-[#06213F]/[0] h-full border-r border-tertiary_main">
+					<div class="flex h-full pt-[48px] pb-[62px]">
+						<div class="w-[20%]"></div>
+						<div class="w-[80%] flex flex-col justify-between">
+							<div class="flex items-center justify-start">
+								<img
+									class="mr-4"
+									width="114"
+									height="116"
+									id="logo"
+									class="block min-h-[116px] min-w-[114px] max-w-none"
+									src="./images/logo.svg"
+									alt="USBG" />
+								<div>
+									<p class="text-white font-primary text-2xl font-semibold leading-[120%]">
+										United States
+									</p>
+									<p class="text-white font-primary text-2xl font-semibold leading-[120%]">
+										Bartenders' Guild
+									</p>
+								</div>
+							</div>
+							<p class="text-white font-light text-[15px] font-text">
+								Copyright 2023 | All rights reserved.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-full bg-[#242424] pl-8 pt-12 pr-40">
+				<div class="flex justify-between items-start">
+					<div class="w-[352px]">
+						<p class="text-[#0A94BE] font-primary font-semibold text-2xl leading-[120%]">
+							Elevate Your Bartending Journey
+						</p>
+						<p class="text-[#0A94BE] font-primary font-semibold text-2xl leading-[120%]">
+							with Our Newsletter!
+						</p>
+						<p
+							class="font-text mt-[14px] mb-[20px] text-[15px] font-light leading-[160%] text-white">
+							Craft. Connect. Create. Join our newsletter for bartender stories, mixology
+							techniques, and networking opportunities. Be a part of the United States
+							Bartenders' Guild.
+						</p>
+						<form class="">
+							<input
+								placeholder="Enter your email address"
+								type="text"
+								class="input w-full" />
+
+							<div class="flex">
+								<input
+									placeholder="Enter your Name"
+									type="text"
+									class="input mr-3 w-full" />
+								<input
+									placeholder="Subscribe"
+									value="Subscribe"
+									type="submit"
+									class="bg-tertiary_main mb-3 hover:bg-accent_orange rounded-full border-accent_orange py-2 px-5 placeholder:text-white text-white outline-none" />
+							</div>
+						</form>
+					</div>
+					<div class="">
+						<p
+							class="font-text text-right text-[15px] mb-3 font-semibold leading-[160%] text-tertiary_main">
+							Connect with us
+						</p>
+						<div class="flex">
+							<a href="#" class="mr-4"
+								><img
+									id="logo"
+									class="block min-h-[26px] min-w-[26px] max-w-none"
+									src="./images/icon-facebook.svg"
+									alt="USBG"
+							/></a>
+							<a href="#" class="mr-4"
+								><img
+									id="logo"
+									class="block min-h-[26px] min-w-[26px] max-w-none"
+									src="./images/icon-twitter.svg"
+									alt="USBG"
+							/></a>
+							<a href="#" class="mr-4"
+								><img
+									id="logo"
+									class="block min-h-[26px] min-w-[26px] max-w-none"
+									src="./images/icon-instagram.svg"
+									alt="USBG" /></a
+							><a href="#"
+								><img
+									id="logo"
+									class="block min-h-[26px] min-w-[26px] max-w-none"
+									src="./images/icon-linkedin.svg"
+									alt="USBG"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
