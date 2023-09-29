@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>USBG - United States Bartenders' Guild</title>
+		<link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+		<link rel="stylesheet" href="https://use.typekit.net/izj4lfd.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+			rel="stylesheet" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							tertiary_main: '#D2B070',
+							accent_orange: '#F4BC69',
+							accent_teal_blue: '#086E8D',
+							accent_teal_blue_400: '#1097c0',
+							neutral_grey_850: '#191919',
+						},
+					},
+					fontFamily: {
+						primary: ['acumin-pro-condensed, sans-serif'],
+						text: ['Inter, sans-serif'],
+					},
+				},
+			};
+		</script>
+		<style type="text/tailwindcss">
+			@layer utilities {
+				.main-menu-lv-0 {
+					@apply border-b-2 border-accent_teal_blue_400 font-primary text-[1.375rem] leading-none text-white block uppercase transition-all duration-300 p-4;
+				}
+				.main-menu-lv-0-hover {
+					@apply bg-tertiary_main border-accent_orange;
+				}
+			}
+			@layer base {
+				p {
+					@apply leading-normal;
+				}
+				h1 {
+					@apply text-6xl font-primary;
+				}
+			}
+		</style>
+	</head>
+	<body class="overflow-x-hidden font-text">
+		<header class="bg-gradient-to-r from-[#090909] to-[#333333]">
+			<div class="container mx-auto min-h-[80px]"></div>
+			<div class="bg-neutral_grey_850">
+				<div
+					class="container mx-auto flex flex-col sm:flex-row justify-between items-end relative min-h-[56px]">
+					<div class="logo relative bottom-[-21px]">
+						<div class="absolute left-2/4 -bottom-2 -translate-y-[20px] -translate-x-2/4">
+							<a href="#" class="block"
+								><img
+									id="logo"
+									class="block min-h-[136px] min-w-[136px] max-w-none"
+									src="./images/logo.svg"
+									alt="USBG"
+							/></a>
+						</div>
+
+						<img
+							class="block min-h-[21px] min-w-[200px] max-w-none"
+							src="./images/bg-logo.png"
+							alt="" />
+					</div>
+					<nav class="main-menu">
+						<ul class="flex gap-1 m-0 p-0 pb-[2px]">
+							<li>
+								<a class="main-menu-lv-0 hover:main-menu-lv-0-hover" href="#">Membership</a>
+							</li>
+							<li>
+								<a class="main-menu-lv-0 hover:main-menu-lv-0-hover" href="#">Education</a>
+							</li>
+							<li>
+								<a class="main-menu-lv-0 hover:main-menu-lv-0-hover" href="#">Events</a>
+							</li>
+							<li>
+								<a class="main-menu-lv-0 hover:main-menu-lv-0-hover" href="#">Chapters</a>
+							</li>
+							<li>
+								<a class="main-menu-lv-0 hover:main-menu-lv-0-hover" href="#">News</a>
+							</li>
+							<li>
+								<a class="main-menu-lv-0 hover:main-menu-lv-0-hover" href="#">About USBG</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div
+				class="bg-cover bg-no-repeat bg-center"
+				style="background-image: url(./images/bg-title-bar-01-1.jpg)">
+				<div class="flex flex-col bg-gradient-to-r from-[#000000cb] to-[#00000000]">
+					<div class="container mx-auto py-20">
+						<h1 class="text-accent_orange">Why Join?</h1>
+					</div>
+					<div class="bg-gradient-to-r from-[#343434a2] to-[#00000000]">
+						<div class="container mx-auto">
+							<ul>
+								<li>
+									<a class="block text-white p-2">Home</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="container mx-auto py-8 h-96">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos omnis aut
+				fugit, consequuntur sed aperiam accusantium, nisi ullam cupiditate vitae ipsam non totam
+				doloribus ipsum. Expedita odit delectus ipsam.
+			</p>
+		</main>
+		<footer class="bg-slate-600 h-96"></footer>
+	</body>
+</html>
