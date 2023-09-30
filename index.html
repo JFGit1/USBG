@@ -20,7 +20,7 @@
 							'tertiary-main': '#D2B070',
 							'accent-orange': '#F4BC69',
 							'accent-teal-blue': '#086E8D',
-							'accent-teal-blue_400': '#1097c0',
+							'accent-teal-blue-400': '#1097c0',
 							'accent-teal-blue-500': '#14355A',
 							'neutral-grey-850': '#191919',
 						},
@@ -35,13 +35,13 @@
 		<style type="text/tailwindcss">
 			@layer utilities {
 				.main-menu-lv-0 {
-					@apply border-b-2 border-accent-teal-blue_400 font-primary text-[1.375rem] leading-none text-white block uppercase transition-all duration-300 p-4;
+					@apply border-b-2 border-accent-teal-blue-400 font-primary text-[1.375rem] leading-none text-white block uppercase p-4 hover:bg-tertiary-main hover:border-accent-orange transition-all duration-300;
 				}
-				.main-menu-lv-0-hover {
-					@apply bg-tertiary-main border-accent-orange;
+				.secondary-menu {
+					@apply text-white flex gap-1 hover:text-accent-orange font-primary text-[19px] leading-none font-medium transition-all duration-300;
 				}
 				.input {
-					@apply bg-accent-teal-blue hover:bg-accent-teal-blue_400 mb-3 border rounded-full border-accent-teal-blue_400 py-2 px-5 placeholder:text-white text-white outline-none;
+					@apply bg-accent-teal-blue hover:bg-accent-teal-blue-400 mb-3 border rounded-full border-accent-teal-blue-400 py-2 px-5 placeholder:text-white text-white outline-none;
 				}
 			}
 			@layer base {
@@ -54,112 +54,93 @@
 			}
 		</style>
 	</head>
-	<body class="overflow-x-hidden font-text">
+	<body class="overflow-x-hidden font-text cursor-default">
 		<header class="bg-gradient-to-r from-[#090909] to-[#333333] overflow-x-hidden">
 			<!-- Secondary Menu -->
 			<div class="container flex justify-end items-center gap-2 mx-auto min-h-[80px]">
-				<ul class="">
-					<li class="">
+				<ul class="flex gap-4 lg:justify-end m-0 p-0 items-center list-none">
+					<li>
 						<a
 							href="#"
-							class="flex bg-accent-teal-blue-500 hover:text-white hover:bg-accent-teal-blue rounded-full pl-4 pr-1 py-1 leading-[120%] text-accent-orange gap-2 font-medium font-primary text-[19px] justify-center items-center">
+							class="flex bg-accent-teal-blue-500 hover:text-white hover:bg-[#1D518C] rounded-full pl-4 pr-1 py-1 leading-[120%] text-accent-orange gap-2 font-medium font-primary text-[19px] justify-center items-center transition-all duration-300">
 							Ready to Join?<img
-								id="logo"
 								class="block min-h-[32px] min-w-[32px] max-w-none"
 								src="./images/icon-arrow-right-circle.svg"
-								alt="USBG"
+								alt="Ready to Join?"
 						/></a>
 					</li>
 				</ul>
 
-				<div class="relative bg-accent-teal-blue py-[10px] pl-5 pr-2 rounded-l-full">
+				<div class="relative flex gap-8 bg-accent-teal-blue py-[10px] pl-5 pr-4 rounded-l-full">
 					<ul class="flex gap-4 lg:justify-end m-0 p-0 items-center list-none">
-						<li class="flex mr-4 justify-center items-center">
-							<a
-								href="#"
-								class="text-white flex gap-1 hover:text-accent-orange font-primary text-[19px] leading-[120%] font-medium">
+						<li class="flex justify-center items-center">
+							<a href="#" class="secondary-menu">
 								<img
-									id="logo"
 									class="block min-h-[20px] min-w-[20px] max-w-none"
 									src="./images/icon-user.svg"
-									alt="USBG" />
+									alt="Login" />
 								Login
 							</a>
 						</li>
-						<li class="flex mr-4 justify-center items-center">
-							<a
-								href="#"
-								class="text-white flex gap-1 hover:text-accent-orange font-primary text-[19px] leading-[120%] font-medium">
+						<li class="flex justify-center items-center">
+							<a href="#" class="secondary-menu">
 								<img
-									id="logo"
 									class="block min-h-[20px] min-w-[20px] max-w-none"
 									src="./images/icon-shopping.svg"
-									alt="USBG" />
+									alt="Shop" />
 								Shop
 							</a>
 						</li>
-						<li class="flex mr-4 justify-center items-center">
-							<a
-								href="#"
-								class="text-white flex gap-1 hover:text-accent-orange font-primary text-[19px] leading-[120%] font-medium">
+						<li class="flex justify-center items-center">
+							<a href="#" class="secondary-menu">
 								<img
-									id="logo"
 									class="block min-h-[20px] min-w-[20px] max-w-none"
 									src="./images/icon-email.svg"
-									alt="USBG" />
+									alt="Contact" />
 								Contact
 							</a>
 						</li>
-						<li class="flex mr-8 justify-center items-center">
-							<a
-								href="#"
-								class="text-white flex gap-1 hover:text-accent-orange font-primary text-[19px] leading-[120%] font-medium">
+						<li class="flex justify-center items-center">
+							<a href="#" class="secondary-menu">
 								<img
-									id="logo"
 									class="block min-h-[20px] min-w-[20px] max-w-none"
 									src="./images/icon-search.svg"
-									alt="USBG" />
+									alt="Search" />
 								Search
 							</a>
 						</li>
-
+					</ul>
+					<ul class="flex gap-4 lg:justify-end m-0 p-0 items-center list-none">
 						<li>
 							<a href="#"
 								><img
-									id="logo"
 									class="block min-h-[20px] min-w-[20px] max-w-none"
 									src="./images/icon-facebook.svg"
-									alt="USBG"
+									alt="Facebook"
 							/></a>
 						</li>
-
 						<li>
 							<a href="#"
 								><img
-									id="logo"
 									class="block min-h-[20px] min-w-[20px] max-w-none"
 									src="./images/icon-twitter.svg"
-									alt="USBG"
+									alt="Twitter"
 							/></a>
 						</li>
-
 						<li>
 							<a href="#"
 								><img
-									id="logo"
 									class="block min-h-[20px] min-w-[20px] max-w-none"
 									src="./images/icon-instagram.svg"
-									alt="USBG"
+									alt="Instagram"
 							/></a>
 						</li>
-
 						<li>
 							<a href="#"
 								><img
-									id="logo"
 									class="block min-h-[20px] min-w-[20px] max-w-none"
 									src="./images/icon-linkedin.svg"
-									alt="USBG"
+									alt="Linkedin"
 							/></a>
 						</li>
 					</ul>
@@ -175,7 +156,6 @@
 						<div class="absolute left-2/4 -bottom-2 -translate-y-[20px] -translate-x-2/4">
 							<a href="#" class="block"
 								><img
-									id="logo"
 									class="block min-h-[136px] min-w-[136px] max-w-none"
 									src="./images/logo.svg"
 									alt="USBG"
@@ -216,13 +196,23 @@
 				style="background-image: url(./images/bg-title-bar-01-1.jpg)">
 				<div class="flex flex-col bg-gradient-to-r from-[#000000cb] to-[#00000000]">
 					<div class="container mx-auto py-20">
-						<h1 class="text-accent-orange">Why Join?</h1>
+						<!-- Page Title -->
+						<h1 class="text-accent-orange px-4">Why Join?</h1>
 					</div>
-					<div class="bg-gradient-to-r from-[#343434a2] to-[#00000000]">
+					<div class="bg-gradient-to-r from-[#343434a2] to-[#34343420]">
 						<div class="container mx-auto">
-							<ul>
+							<!-- Breadcrumbs -->
+							<ul class="flex items-center m-0 px-4 gap-2 pb-1 pt-[2px]">
 								<li>
-									<a class="block text-white p-2">Home</a>
+									<a href="#" class="block text-accent-teal-blue-400 py-2">Home</a>
+								</li>
+								<li>
+									<img
+										class="block min-h-[8px] min-w-[5px]"
+										src="./images/icon-chevron-right.svg" />
+								</li>
+								<li>
+									<span class="block text-white py-2">Why Join?</span>
 								</li>
 							</ul>
 						</div>
@@ -230,14 +220,12 @@
 				</div>
 			</div>
 		</header>
-		<main class="px-4">
-			<div class="container mx-auto py-8 min-h-[400px]">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos omnis
-					aut fugit, consequuntur sed aperiam accusantium, nisi ullam cupiditate vitae ipsam
-					non totam doloribus ipsum. Expedita odit delectus ipsam.
-				</p>
-			</div>
+		<main class="container mx-auto px-4 py-8 min-h-[400px]">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos omnis aut
+				fugit, consequuntur sed aperiam accusantium, nisi ullam cupiditate vitae ipsam non totam
+				doloribus ipsum. Expedita odit delectus ipsam.
+			</p>
 		</main>
 
 		<footer class="bg-[#242424] overflow-x-hidden">
@@ -312,40 +300,36 @@
 						<li>
 							<a href="#"
 								><img
-									id="logo"
 									class="block min-h-[26px] min-w-[26px] max-w-none"
 									src="./images/icon-facebook.svg"
-									alt="USBG"
+									alt="Facebook"
 							/></a>
 						</li>
 
 						<li>
 							<a href="#"
 								><img
-									id="logo"
 									class="block min-h-[26px] min-w-[26px] max-w-none"
 									src="./images/icon-twitter.svg"
-									alt="USBG"
+									alt="Twitter"
 							/></a>
 						</li>
 
 						<li>
 							<a href="#"
 								><img
-									id="logo"
 									class="block min-h-[26px] min-w-[26px] max-w-none"
 									src="./images/icon-instagram.svg"
-									alt="USBG"
+									alt="Instagram"
 							/></a>
 						</li>
 
 						<li>
 							<a href="#"
 								><img
-									id="logo"
 									class="block min-h-[26px] min-w-[26px] max-w-none"
 									src="./images/icon-linkedin.svg"
-									alt="USBG"
+									alt="Linkedin"
 							/></a>
 						</li>
 					</ul>
