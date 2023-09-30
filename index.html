@@ -56,8 +56,9 @@
 	</head>
 	<body class="overflow-x-hidden font-text cursor-default">
 		<header class="bg-gradient-to-r from-[#090909] to-[#333333] overflow-x-hidden">
-			<!-- Secondary Menu -->
-			<div class="container flex justify-end items-center gap-2 mx-auto min-h-[80px]">
+			<div
+				class="lg:container flex justify-end items-center gap-2 mx-auto min-h-[60px] md:min-h-[80px] transition-all duration-300">
+				<!-- Secondary Menu -->
 				<ul class="flex gap-4 lg:justify-end m-0 p-0 items-center list-none">
 					<li>
 						<a
@@ -69,9 +70,19 @@
 								alt="Ready to Join?"
 						/></a>
 					</li>
+					<li class="md:hidden mr-4">
+						<div
+							class="bg-white flex justify-center items-center h-[40px] w-[40px] rounded-full cursor-pointer transition-all duration-300">
+							<img
+								class="block min-h-[18px] min-w-[26px] max-w-none"
+								src="./images/icon-menu-open.svg"
+								alt="Shop" />
+						</div>
+					</li>
 				</ul>
 
-				<div class="relative flex gap-8 bg-accent-teal-blue py-[10px] pl-5 pr-4 rounded-l-full">
+				<div
+					class="relative hidden md:flex gap-8 bg-accent-teal-blue py-[10px] pl-5 pr-4 rounded-l-full">
 					<ul class="flex gap-4 lg:justify-end m-0 p-0 items-center list-none">
 						<li class="flex justify-center items-center">
 							<a href="#" class="secondary-menu">
@@ -151,12 +162,13 @@
 			<!-- Primary Menu -->
 			<div class="bg-neutral-grey-850">
 				<div
-					class="container mx-auto flex flex-col sm:flex-row justify-between items-end relative min-h-[56px]">
-					<div class="logo relative bottom-[-21px]">
+					class="lg:container mx-auto flex flex-row justify-between items-end relative min-h-[56px]">
+					<div
+						class="logo relative bottom-[-21px] -left-8 md:left-0 transition-all duration-300">
 						<div class="absolute left-2/4 -bottom-2 -translate-y-[20px] -translate-x-2/4">
 							<a href="#" class="block"
 								><img
-									class="block min-h-[136px] min-w-[136px] max-w-none"
+									class="block min-h-[136px] min-w-[136px] max-w-none origin-bottom transition-all duration-300 scale-75 md:scale-100"
 									src="./images/logo.svg"
 									alt="USBG"
 							/></a>
@@ -168,7 +180,8 @@
 							alt="" />
 					</div>
 					<nav class="main-menu">
-						<ul class="flex gap-1 m-0 p-0 pb-[2px]">
+						<!-- Main Menu -->
+						<ul class="hidden md:flex gap-1 m-0 p-0 pb-[2px]">
 							<li>
 								<a class="main-menu-lv-0 hover:main-menu-lv-0-hover" href="#">Membership</a>
 							</li>
@@ -195,12 +208,12 @@
 				class="bg-cover bg-no-repeat bg-center"
 				style="background-image: url(./images/bg-title-bar-01-1.jpg)">
 				<div class="flex flex-col bg-gradient-to-r from-[#000000cb] to-[#00000000]">
-					<div class="container mx-auto py-20">
+					<div class="lg:container w-full mx-auto py-20">
 						<!-- Page Title -->
-						<h1 class="text-accent-orange px-4">Why Join?</h1>
+						<h1 class="text-accent-orange px-4">Impexium</h1>
 					</div>
 					<div class="bg-gradient-to-r from-[#343434a2] to-[#34343420]">
-						<div class="container mx-auto">
+						<div class="lg:container mx-auto">
 							<!-- Breadcrumbs -->
 							<ul class="flex items-center m-0 px-4 gap-2 pb-1 pt-[2px]">
 								<li>
@@ -212,7 +225,7 @@
 										src="./images/icon-chevron-right.svg" />
 								</li>
 								<li>
-									<span class="block text-white py-2">Why Join?</span>
+									<span class="block text-white py-2">Impexium</span>
 								</li>
 							</ul>
 						</div>
@@ -220,7 +233,7 @@
 				</div>
 			</div>
 		</header>
-		<main class="container mx-auto px-4 py-8 min-h-[400px]">
+		<main class="lg:container mx-auto px-4 py-8 min-h-[400px]">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos omnis aut
 				fugit, consequuntur sed aperiam accusantium, nisi ullam cupiditate vitae ipsam non totam
